@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Occludent — Tandtechnisch Laboratorium</title>
+  <meta name="description" content="Tandtechnisch Laboratorium Occludent in Dalfsen. Precisie tandtechniek, kronen, bruggen, prothesen en meer." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAV ═══════════════════════════════════════ -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="logo.png" alt="Occludent" class="nav-logo-img" />
+      </a>
+      <nav class="nav-links">
+        <a href="#about">Over ons</a>
+        <a href="#services">Diensten</a>
+        <a href="#gallery">Laboratorium</a>
+        <a href="#process">Werkwijze</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+      <button id="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobile-menu">
+      <a href="#about"    onclick="closeMobileMenu()">Over ons</a>
+      <a href="#services" onclick="closeMobileMenu()">Diensten</a>
+      <a href="#gallery"  onclick="closeMobileMenu()">Laboratorium</a>
+      <a href="#process"  onclick="closeMobileMenu()">Werkwijze</a>
+      <a href="#contact"  onclick="closeMobileMenu()">Contact</a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════ HERO ══════════════════════════════════════ -->
+  <section id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">High Precision Is Not A Luxury · Dalfsen</p>
+      <h1 class="hero-title">Vakmanschap<br>in elk detail</h1>
+      <p class="hero-sub">
+        Bij Occludent combineren we jarenlange ervaring met moderne technieken
+        voor tandtechnisch werk van de hoogste kwaliteit.
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-primary">Onze diensten</a>
+        <a href="#contact"  class="btn btn-outline">Neem contact op</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll naar beneden">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ═══════════════════ STATS BAR ════════════════════════════════ -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <span class="stat-num">15+</span>
+      <span class="stat-label">Jaar ervaring</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">CAD</span>
+      <span class="stat-label">Digitale techniek</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">NL</span>
+      <span class="stat-label">Gevestigd in Dalfsen</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ ABOUT ════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-wrap">
+        <div class="about-img-placeholder">
+            <img src="logo-color.png" alt="Occludent" class="about-logo-img" />
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p class="section-eyebrow">Over ons</p>
+          <h2 class="section-title">Van onze marketing<br>hoeven we het niet te hebben —<br><em>wel van ons techniekwerk</em></h2>
+          <p class="body-text">
+            Tandtechnisch Laboratorium Occludent is gevestigd in Dalfsen en levert hoogwaardig tandtechnisch werk aan tandartspraktijken door heel Nederland. Met een passie voor precisie en een oog voor esthetiek zorgen wij voor een perfecte pasvorm en een natuurlijk resultaat.
+          </p>
+          <p class="body-text">
+            Elk werkstuk wordt met de hand vervaardigd en doorloopt een strikt kwaliteitsproces. Van eenvoudige restauraties tot complexe volledige reconstructies — bij Occludent bent u aan het juiste adres.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
+              Snelle levertijden
+            </div>
+            <div class="highlight-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
+              Persoonlijk contact
+            </div>
+            <div class="highlight-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
+              Digitale en analoge technieken
+            </div>
+            <div class="highlight-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
+              Topkwaliteit materialen
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SERVICES ═════════════════════════════════ -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Wat wij doen</p>
+        <h2 class="section-title">Onze diensten</h2>
+        <p class="section-sub">Wij bieden een volledig pakket aan tandtechnische diensten, afgestemd op de wensen van de tandarts en de patiënt.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card" data-index="1">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8C17,8 12,14 12,20 C12,28 16,34 18,38 C19,41 21,44 24,44 C27,44 29,41 30,38 C32,34 36,28 36,20 C36,14 31,8 24,8 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M18,20 C18,16 21,13 24,13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Kronen & Bruggen</h3>
+          <p>Vaste restauraties in keramiek, zirkonia of metaalkeramiek. Perfecte pasvorm, natuurlijke esthetiek.</p>
+        </div>
+
+        <div class="service-card" data-index="2">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="20" width="32" height="18" rx="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M14,20 C14,14 18,10 24,10 C30,10 34,14 34,20" stroke="currentColor" stroke-width="2" fill="none"/>
+              <line x1="24" y1="20" x2="24" y2="38" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/>
+            </svg>
+          </div>
+          <h3>Prothesen</h3>
+          <p>Volledige en partiële prothesen op maat gemaakt voor maximaal comfort en optimale functionaliteit.</p>
+        </div>
+
+        <div class="service-card" data-index="3">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/>
+              <path d="M18,24 L22,28 L30,20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Inlays & Onlays</h3>
+          <p>Nauwkeurige indirecte restauraties in composiet of keramiek voor een duurzaam en esthetisch resultaat.</p>
+        </div>
+
+        <div class="service-card" data-index="4">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12,36 L24,12 L36,36" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="16" y1="28" x2="32" y2="28" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Implantaatwerk</h3>
+          <p>Kronen en bruggen op implantaten. Wij werken samen met alle gangbare implantatensystemen.</p>
+        </div>
+
+        <div class="service-card" data-index="5">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="14" width="28" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M10,22 L38,22" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="24" cy="30" r="3" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>CAD/CAM & Digitaal</h3>
+          <p>Digitale workflow met CAD/CAM technologie voor hoge precisie, consistentie en snellere productietijden.</p>
+        </div>
+
+        <div class="service-card" data-index="6">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24,10 C24,10 14,18 14,26 C14,31.5 18.5,36 24,36 C29.5,36 34,31.5 34,26 C34,18 24,10 24,10 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M20,28 C20,26 22,24 24,24 C26,24 28,26 28,28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Reparaties & Aanpassingen</h3>
+          <p>Snelle en betrouwbare reparatie van bestaande prothesen, beugels en andere tandtechnische constructies.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ GALLERY ═════════════════════════════════ -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Het laboratorium</p>
+        <h2 class="section-title">Vakmanschap van dichtbij</h2>
+        <p class="section-sub">Een blik achter de schermen — waar precisie en passie samenkomen.</p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- large feature image -->
+        <div class="gallery-item gallery-feature">
+          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=900&q=80&fit=crop" alt="Tandtechnicus aan het werk" loading="lazy" />
+          <div class="gallery-overlay">
+            <span>Handmatig bewerken</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1629909615032-dba2a7fb0573?w=600&q=80&fit=crop" alt="Keramiek kroon" loading="lazy" />
+          <div class="gallery-overlay"><span>Keramiekwerk</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80&fit=crop" alt="Laboratorium apparatuur" loading="lazy" />
+          <div class="gallery-overlay"><span>Digitale techniek</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80&fit=crop" alt="Tandheelkundige modellen" loading="lazy" />
+          <div class="gallery-overlay"><span>Gipsmodellen</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=600&q=80&fit=crop" alt="Precisie instrumenten" loading="lazy" />
+          <div class="gallery-overlay"><span>Precisie instrumenten</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80&fit=crop" alt="Tandtechnicus microscopisch werk" loading="lazy" />
+          <div class="gallery-overlay"><span>Detail afwerking</span></div>
+        </div>
+
+      </div>
+
+      <p class="gallery-note">📸 Eigen foto's worden binnenkort toegevoegd</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PROCESS ══════════════════════════════════ -->
+  <section id="process">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Hoe werkt het</p>
+        <h2 class="section-title">Onze werkwijze</h2>
+      </div>
+      <div class="process-steps">
+
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Afdruk of scan ontvangen</h3>
+            <p>Wij ontvangen de afdruk, gipsmodel of digitale scan van uw praktijk. Zowel traditioneel als digitaal aanleveren is mogelijk.</p>
+          </div>
+        </div>
+
+        <div class="process-connector"></div>
+
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Ontwerp & fabricage</h3>
+            <p>Op basis van de aanlevering ontwerpen en vervaardigen wij het werkstuk met maximale precisie, handmatig of via CAD/CAM.</p>
+          </div>
+        </div>
+
+        <div class="process-connector"></div>
+
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Kwaliteitscontrole</h3>
+            <p>Elk werkstuk wordt gecontroleerd op pasvorm, esthetiek en functie voordat het de deur uitgaat.</p>
+          </div>
+        </div>
+
+        <div class="process-connector"></div>
+
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>Levering</h3>
+            <p>Snelle en veilige levering aan uw praktijk. Bij spoed overleggen wij graag over de mogelijkheden.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT ══════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Samenwerken?</p>
+        <h2 class="section-title">Neem contact op</h2>
+        <p class="section-sub">Heeft u een vraag, wilt u een werkstuk aanmelden of meer informatie? Wij staan voor u klaar.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- contact info -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Adres</strong>
+              <p>Schoolstraat-Oudleusen 32<br>7722 SZ, Dalfsen</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Telefoon</strong>
+              <p><a href="tel:+31687185860">+31 (0) 687 185 860</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>E-mail</strong>
+              <p><a href="mailto:info@occludent.nl">info@occludent.nl</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Openingstijden</strong>
+              <p>Ma – Vr: 08:00 – 17:00<br>Za – Zo: Gesloten</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- contact form -->
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Naam *</label>
+              <input type="text" id="name" name="name" placeholder="Uw naam" required />
+            </div>
+            <div class="form-group">
+              <label for="practice">Praktijk</label>
+              <input type="text" id="practice" name="practice" placeholder="Naam praktijk" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="uw@email.nl" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefoon</label>
+              <input type="tel" id="phone" name="phone" placeholder="+31 6 ..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Onderwerp</label>
+            <select id="subject" name="subject">
+              <option value="">Selecteer een onderwerp</option>
+              <option>Kroon of brug aanmelden</option>
+              <option>Prothese aanmelden</option>
+              <option>Implantaatwerk</option>
+              <option>Reparatie / aanpassing</option>
+              <option>Vrijblijvend kennismaken</option>
+              <option>Anders</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Bericht *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Uw bericht..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+            Verstuur bericht
+          </button>
+          <p id="form-feedback"></p>
+        </form>
+
+      </div>
+
+      <!-- map embed -->
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2424.5!2d-8.6878!3d39.2369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e0!2sSchoolstraat-Oudleusen%2032%2C%207722%20SZ%20Dalfsen!5e0!3m2!1snl!2snl!4v1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2416.7778609054!2d6.2550!3d52.5050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c819e8f3d3b4a1%3A0x1!2sSchoolstraat-Oudleusen%2032%2C%207722SZ%2C%20Dalfsen!5e0!3m2!1snl!2snl!4v1700000000000"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Locatie Occludent"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Occludent" class="footer-logo-img" />
+        <p>Tandtechnisch Laboratorium<br>Dalfsen, Nederland</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">Over ons</a>
+        <a href="#services">Diensten</a>
+        <a href="#process">Werkwijze</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:+31687185860">+31 (0) 687 185 860</a>
+        <a href="mailto:info@occludent.nl">info@occludent.nl</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Occludent Tandtechnisch Laboratorium &mdash; Alle rechten voorbehouden</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
