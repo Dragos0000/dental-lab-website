@@ -6,6 +6,7 @@
   <title>Occludent — Tandtechnisch Laboratorium</title>
   <meta name="description" content="Tandtechnisch Laboratorium Occludent in Dalfsen. Precisie tandtechniek, kronen, bruggen, prothesen en meer." />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/logos/browser.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 </head>
@@ -15,13 +16,13 @@
   <header id="navbar">
     <div class="nav-inner">
       <a href="#home" class="nav-logo">
-        <img src="logo.png" alt="Occludent" class="nav-logo-img" />
+        <img src="assets/logos/logo.png" alt="Occludent" class="nav-logo-img" />
       </a>
       <nav class="nav-links">
         <a href="#about">Over ons</a>
         <a href="#services">Diensten</a>
         <a href="#gallery">Laboratorium</a>
-        <a href="#process">Werkwijze</a>
+        <a href="showcases.html">Showcases</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
       <button id="nav-toggle" aria-label="Menu">
@@ -29,11 +30,11 @@
       </button>
     </div>
     <div id="mobile-menu">
-      <a href="#about"    onclick="closeMobileMenu()">Over ons</a>
-      <a href="#services" onclick="closeMobileMenu()">Diensten</a>
-      <a href="#gallery"  onclick="closeMobileMenu()">Laboratorium</a>
-      <a href="#process"  onclick="closeMobileMenu()">Werkwijze</a>
-      <a href="#contact"  onclick="closeMobileMenu()">Contact</a>
+      <a href="#about"           onclick="closeMobileMenu()">Over ons</a>
+      <a href="#services"        onclick="closeMobileMenu()">Diensten</a>
+      <a href="#gallery"         onclick="closeMobileMenu()">Laboratorium</a>
+      <a href="showcases.html">Showcases</a>
+      <a href="#contact"         onclick="closeMobileMenu()">Contact</a>
     </div>
   </header>
 
@@ -84,9 +85,7 @@
       <div class="about-grid">
         <div class="about-visual">
           <div class="about-img-wrap">
-        <div class="about-img-placeholder">
-            <img src="logo-color.png" alt="Occludent" class="about-logo-img" />
-            </div>
+            <img src="assets/lab/profile_pic.jpg" alt="Tandtechnicus Occludent" class="about-profile-img" />
           </div>
         </div>
 
@@ -218,88 +217,58 @@
 
         <!-- large feature image -->
         <div class="gallery-item gallery-feature">
-          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=900&q=80&fit=crop" alt="Tandtechnicus aan het werk" loading="lazy" />
-          <div class="gallery-overlay">
-            <span>Handmatig bewerken</span>
-          </div>
+          <img src="assets/lab/1000088492.jpg" alt="Laboratorium werkstation" loading="lazy" />
+          <div class="gallery-overlay"><span>Werkstation</span></div>
         </div>
 
         <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1629909615032-dba2a7fb0573?w=600&q=80&fit=crop" alt="Keramiek kroon" loading="lazy" />
-          <div class="gallery-overlay"><span>Keramiekwerk</span></div>
+          <img src="assets/lab/1000088481.jpg" alt="Tandtechnisch werkstation" loading="lazy" />
+          <div class="gallery-overlay"><span>Werkstation</span></div>
         </div>
 
         <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80&fit=crop" alt="Laboratorium apparatuur" loading="lazy" />
-          <div class="gallery-overlay"><span>Digitale techniek</span></div>
+          <img src="assets/lab/1000088484.jpg" alt="Gereedschap en apparatuur" loading="lazy" />
+          <div class="gallery-overlay"><span>Vakgereedschap</span></div>
         </div>
 
         <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80&fit=crop" alt="Tandheelkundige modellen" loading="lazy" />
-          <div class="gallery-overlay"><span>Gipsmodellen</span></div>
+          <img src="assets/lab/1000088491.jpg" alt="Tandtechnicus in detail" loading="lazy" style="object-position: bottom;" />
+          <div class="gallery-overlay"><span>Vakmanschap</span></div>
         </div>
 
         <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=600&q=80&fit=crop" alt="Precisie instrumenten" loading="lazy" />
-          <div class="gallery-overlay"><span>Precisie instrumenten</span></div>
+          <img src="assets/lab/1000088479.jpg" alt="Vakmanschap" loading="lazy" />
+          <div class="gallery-overlay"><span>Vakmanschap</span></div>
         </div>
 
         <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80&fit=crop" alt="Tandtechnicus microscopisch werk" loading="lazy" />
-          <div class="gallery-overlay"><span>Detail afwerking</span></div>
+          <img src="assets/lab/1000088494.jpg" alt="Kleurmatching proces" loading="lazy" />
+          <div class="gallery-overlay"><span>Kleurmatching</span></div>
         </div>
 
-      </div>
-
-      <p class="gallery-note">📸 Eigen foto's worden binnenkort toegevoegd</p>
-    </div>
-  </section>
-
-  <!-- ═══════════════════ PROCESS ══════════════════════════════════ -->
-  <section id="process">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Hoe werkt het</p>
-        <h2 class="section-title">Onze werkwijze</h2>
-      </div>
-      <div class="process-steps">
-
-        <div class="process-step">
-          <div class="step-num">01</div>
-          <div class="step-content">
-            <h3>Afdruk of scan ontvangen</h3>
-            <p>Wij ontvangen de afdruk, gipsmodel of digitale scan van uw praktijk. Zowel traditioneel als digitaal aanleveren is mogelijk.</p>
-          </div>
+        <div class="gallery-item">
+          <img src="assets/lab/1000088495.jpg" alt="Kleurmatching proces" loading="lazy" />
+          <div class="gallery-overlay"><span>Kleurmatching</span></div>
         </div>
 
-        <div class="process-connector"></div>
-
-        <div class="process-step">
-          <div class="step-num">02</div>
-          <div class="step-content">
-            <h3>Ontwerp & fabricage</h3>
-            <p>Op basis van de aanlevering ontwerpen en vervaardigen wij het werkstuk met maximale precisie, handmatig of via CAD/CAM.</p>
-          </div>
+        <div class="gallery-item">
+          <img src="assets/lab/1000088498.jpg" alt="Kleurmatching proces" loading="lazy" style="object-position: bottom;" />
+          <div class="gallery-overlay"><span>Kleurmatching</span></div>
         </div>
 
-        <div class="process-connector"></div>
-
-        <div class="process-step">
-          <div class="step-num">03</div>
-          <div class="step-content">
-            <h3>Kwaliteitscontrole</h3>
-            <p>Elk werkstuk wordt gecontroleerd op pasvorm, esthetiek en functie voordat het de deur uitgaat.</p>
-          </div>
+        <div class="gallery-item">
+          <img src="assets/lab/1000088499.jpg" alt="Kleurmatching proces" loading="lazy" />
+          <div class="gallery-overlay"><span>Kleurmatching</span></div>
         </div>
 
-        <div class="process-connector"></div>
+        <div class="gallery-item">
+          <img src="assets/lab/1000088500.jpg" alt="Patiëntfoto's" loading="lazy" />
+          <div class="gallery-overlay"><span>Patiëntfoto's</span></div>
+        </div>
 
-        <div class="process-step">
-          <div class="step-num">04</div>
-          <div class="step-content">
-            <h3>Levering</h3>
-            <p>Snelle en veilige levering aan uw praktijk. Bij spoed overleggen wij graag over de mogelijkheden.</p>
-          </div>
+        <div class="gallery-item">
+          <img src="assets/lab/1000088503.jpg" alt="Apparatuur" loading="lazy" />
+          <div class="gallery-overlay"><span>Apparatuur</span></div>
         </div>
 
       </div>
@@ -422,8 +391,7 @@
       <!-- map embed -->
       <div class="map-wrap">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2424.5!2d-8.6878!3d39.2369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e0!2sSchoolstraat-Oudleusen%2032%2C%207722%20SZ%20Dalfsen!5e0!3m2!1snl!2snl!4v1"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2416.7778609054!2d6.2550!3d52.5050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c819e8f3d3b4a1%3A0x1!2sSchoolstraat-Oudleusen%2032%2C%207722SZ%2C%20Dalfsen!5e0!3m2!1snl!2snl!4v1700000000000"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000!2d6.3130248!3d52.5336822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7e3cd7ea6b11d%3A0x63bcdaa867c5723d!2sOccludent%20-%20amberKroon!5e0!3m2!1snl!2snl!4v1700000000000"
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           title="Locatie Occludent"></iframe>
       </div>
@@ -434,7 +402,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="logo.png" alt="Occludent" class="footer-logo-img" />
+        <img src="assets/logos/logo.png" alt="Occludent" class="footer-logo-img" />
         <p>Tandtechnisch Laboratorium<br>Dalfsen, Nederland</p>
       </div>
       <div class="footer-links">

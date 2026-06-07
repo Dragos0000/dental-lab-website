@@ -53,7 +53,7 @@ window.addEventListener('scroll', () => {
   });
   navLinks.forEach(link => {
     link.style.color = link.getAttribute('href') === '#' + current
-      ? '#fff'
+      ? '#35b5ac'
       : '';
   });
 }, { passive: true });
