@@ -186,9 +186,12 @@ section:not(#home) { padding: 5rem 0; }
   margin-bottom: 0.5rem;
 }
 
-.about-logo-img {
-  width: 65%;
-  height: auto;
+.about-profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  display: block;
 }
 
 .nav-links {
@@ -376,14 +379,8 @@ section:not(#home) { padding: 5rem 0; }
 
 .about-img-wrap {
   position: relative;
-}
-.about-img-placeholder {
-  background: linear-gradient(135deg, #c8dde8, #e8f4f8);
-  border-radius: var(--radius-lg);
   aspect-ratio: 4/5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
 }
@@ -473,7 +470,6 @@ section:not(#home) { padding: 5rem 0; }
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
   gap: 1rem;
 }
 
@@ -600,7 +596,10 @@ section:not(#home) { padding: 5rem 0; }
 }
 
 /* ── CONTACT ──────────────────────────────────────────────────── */
-#contact { background: var(--off-white); }
+#contact { background: var(--navy); }
+#contact .section-eyebrow { color: var(--gold); }
+#contact .section-title   { color: #fff; }
+#contact .section-sub     { color: rgba(255,255,255,0.65); }
 
 .contact-grid {
   display: grid;
@@ -622,26 +621,27 @@ section:not(#home) { padding: 5rem 0; }
 }
 .contact-icon {
   width: 44px; height: 44px;
-  background: var(--navy);
+  background: rgba(78,205,196,0.12);
+  border: 1px solid rgba(78,205,196,0.3);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gold);
+  color: var(--teal);
   flex-shrink: 0;
 }
 .contact-item strong {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--navy);
+  color: rgba(255,255,255,0.5);
   margin-bottom: 0.25rem;
 }
 .contact-item p {
   font-size: 0.95rem;
-  color: var(--gray-500);
+  color: rgba(255,255,255,0.7);
   line-height: 1.6;
 }
 .contact-item a {
@@ -652,10 +652,11 @@ section:not(#home) { padding: 5rem 0; }
 
 /* form */
 #contact-form {
-  background: var(--white);
+  background: #f8fefd;
   border-radius: var(--radius-lg);
   padding: 2.5rem;
-  box-shadow: var(--shadow);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  border-top: 3px solid var(--teal);
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
